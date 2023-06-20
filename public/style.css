@@ -1,0 +1,35 @@
+button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.task{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border: 1px solid black;
+    width:100%;
+}
+.task input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    background: black;
+}
+.task input[type="text"]{
+    background: none;
+    border: none;
+    font-size: 35px;
+}
+.task input[type="text"]:not(:disabled){
+    border-bottom: 2px solid #fff;
+}
+.task.compelete input[type="text"]{
+    text-decoration: line-through;
+}
+
+#list{
+    width: 100%;
+    background-color: rgb(202, 196, 159);
+}
